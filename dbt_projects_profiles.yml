@@ -1,0 +1,12 @@
+rf_dbt_demo:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ""
+      user: ""
+      role: ACCOUNTADMIN
+      warehouse: RF_VOICE_WH
+      database: RF_DEMO
+      schema: DBT_DEMO
+      threads: 1

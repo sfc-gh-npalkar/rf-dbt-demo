@@ -1,0 +1,10 @@
+name: rf_dbt_demo
+version: "1.0.0"
+config-version: 2
+profile: rf_dbt_demo
+
+model-paths: ["models"]
+
+models:
+  rf_dbt_demo:
+    +materialized: table
